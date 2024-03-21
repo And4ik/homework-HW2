@@ -1,18 +1,33 @@
 .sendForm {
-
+    display: flex; /* Используем flexbox */
+    align-items: center; /* Выравниваем элементы по вертикали */
 }
 
 .textarea {
+    flex: 1; /* Инпут будет занимать всё доступное пространство */
+    padding: 10px; /* Внутренний отступ */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 45px; /* Скругление углов */
+    font-size: 16px; /* Размер текста */
+    box-sizing: border-box; /* Учитываем границу в ширине */
+    margin-right: 40px
+}
 
+.textarea:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    border-color: #007bff; /* Изменяем цвет границы при фокусе */
 }
 
 .button {
-
+    background-color: #4e5ec5; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 30px; /* Внутренний отступ */
+    border: none; /* Убираем границу */
+    border-radius: 25px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 16px; /* Размер текста */
 }
 
 .button:hover {
-
-}
-.button:active {
-
+    background-color: #45a049; /* Цвет фона при наведении */
 }
